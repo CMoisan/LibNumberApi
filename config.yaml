@@ -1,0 +1,25 @@
+countries:
+  FR:
+    default_country_code: "+33"
+    supported_languages: ["fr"]
+    timezone: "Europe/Paris"
+
+  DE:
+    default_country_code: "+49"
+    supported_languages: ["de"]
+    timezone: "Europe/Berlin"
+
+  ES:
+    default_country_code: "+34"
+    supported_languages: ["es"]
+    timezone: "Europe/Madrid"
+
+  IT:
+    default_country_code: "+39"
+    supported_languages: ["it"]
+    timezone: "Europe/Rome"
+
+  GB:
+    default_country_code: "+44"
+    supported_languages: ["en"]
+    timezone: "Europe/London"

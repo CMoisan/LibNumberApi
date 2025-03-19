@@ -1,9 +1,14 @@
 import os
+import yaml
+
+# Chargement de la configuration depuis le fichier YAML
+with open("config.yaml", "r", encoding="utf-8") as file:
+    CONFIG_DATA = yaml.safe_load(file)
 
 class Config:
-    DEFAULT_COUNTRY_CODE = "FR"
     DEBUG = False
     TESTING = False
+    COUNTRY_CONFIG = CONFIG_DATA["countries"]  # Chargement des pays depuis le YAML
 
 class DevelopmentConfig(Config):
     DEBUG = True
